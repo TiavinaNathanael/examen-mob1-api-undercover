@@ -1,8 +1,20 @@
-import * as cors from "cors";
-import * as express from "express";
+import cors from "cors";
+import express from "express";
+
 import { startAutoIncomeCron } from "@/cron/autoIncome";
 import { errorHandler, securityHandler } from "@/middlewares";
-import { authRouter, configurationRouter, goalListRouter, goalRouter, labelRouter, projectRouter, subscriptionRouter, swaggerRouter, transactionListRouter, transactionRouter } from "@/routes";
+import {
+  authRouter,
+  configurationRouter,
+  goalListRouter,
+  goalRouter,
+  labelRouter,
+  projectRouter,
+  subscriptionRouter,
+  swaggerRouter,
+  transactionListRouter,
+  transactionRouter,
+} from "@/routes";
 
 import { walletRouter } from "./routes/wallet-routes";
 
