@@ -5,7 +5,7 @@
   "type": "commonjs",
   "scripts": {
     "build": "tsc && tsc-alias",
-    "start": "node dist/index.js",
+    "start": "ts-node -r tsconfig-paths/register src/index.ts",
     "dev": "nodemon --watch './*' --exec ts-node src/index.ts",
     "migrate:dev": "prisma migrate dev",
     "migrate:prod": "prisma migrate prod",
@@ -49,6 +49,7 @@
     "pdfkit": "^0.17.2",
     "prisma": "^6.5.0",
     "swagger-ui-express": "^5.0.1",
+    "tsconfig-paths": "^4.2.0",
     "uuid": "^11.1.0",
     "zod": "^4.3.6"
   },
