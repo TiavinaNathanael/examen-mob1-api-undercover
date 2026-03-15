@@ -39,6 +39,6 @@
       }
     }
   },
-  "include": ["src"],
+  "include": ["src", "clients"],
   "exclude": ["node_modules"]
 }
